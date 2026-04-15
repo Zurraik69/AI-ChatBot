@@ -39,7 +39,7 @@ function App() {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await fetch("http://localhost:5000/chat", {
+      const res = await fetch("https://ai-chatbot-1-backend-qyis.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
